@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+ 
+    .simple-button {
+        background-color: white;          /* bg-white */
+        color: #3b82f6;                   /* text-blue-500 (color code for blue-500) */
+        border: 1px solid #3b82f6;        /* border + border-blue-500 */
+        border-radius: 9999px;            /* rounded-full */
+        padding-left: 1rem;               /* px-4 (1rem = 16px) */
+        padding-right: 1rem;              /* px-4 */
+        padding-top: 0.5rem;              /* py-2 (0.5rem = 8px) */
+        padding-bottom: 0.5rem;           /* py-2 */
+        font-weight: 600;                 /* font-semibold */
+        transition: background-color 0.3s; /* For smooth hover transition */
+        }
+          
+    .simple-button:hover {
+       background-color: #dbeafe;        /* hover:bg-blue-100 (color code for blue-100) */  
+    }
+
+}

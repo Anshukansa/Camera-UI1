@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanCam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="app.js"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container w-80 bg-blue-500 text-white rounded-lg shadow-lg p-8 text-center">
+        <div class="header mb-2">
+            <h1 class="text-3xl font-bold">CleanCam</h1>
+            <h3 class="text-xl font-medium">Camera For Cleaners</h3>
+        </div>
+        <div class="buttons flex-col space-y-4">
+            <button class="bg-white text-blue-500 border border-blue-500 rounded-full px-4 py-2 font-semibold hover:bg-blue-100" id="login-button">Login</button>
+            <button class="bg-white text-blue-500 border border-blue-500 rounded-full px-4 py-2 font-semibold hover:bg-blue-100" id="gallery-button">Gallery</button>
+        </div>
+    </div>
+
+    <!-- Add a hidden popup container -->
+    <div id="start-session-popup" class="hidden fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-50  items-center justify-center">
+        <div class="bg-white rounded-lg p-4">
+            <h2 class="text-lg font-bold">Enter your name</h2>
+            <input type="text" id="username-input" class="w-full p-2 border border-gray-300 rounded-lg">
+            <button id="session-submit-button" class="bg-blue-500 text-white rounded-full px-4 py-2 font-semibold hover:bg-blue-700">Submit</button>
+        </div>
+    </div>
+
+   
+</body>
+</html>

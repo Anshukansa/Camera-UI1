@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanCam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script defer src="app.js"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center">
+    <div class="absolute inset-0 flex justify-center bg-blue-500">
+        <div class="w-full h-[93%] max-w-[768px] mt-0 p-6 bg-white rounded shadow-md">
+            <div class="flex justify-between my-4">
+                <button id="flash-toggle-button" class="bg-blue-500 text-white font-bold p-4 rounded-full align-middle justify-center h-[60px] w-[60px]">
+                    <i class="fas fa-bolt fa-lg"></i>
+                </button>
+                <button id="switch-button" class="bg-blue-500 text-white font-bold p-4 rounded-full align-middle justify-center h-[60px] w-[60px]">
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+            </div>
+            <div class="h-[75%] w-full overflow-hidden rounded-md">
+                <video id="video" playsinline class="bg-black w-full h-full object-cover rounded-md"></video>
+            </div>
+            <div class="flex justify-between my-4">
+                <button id="gallery-button" class="bg-blue-500 text-white font-bold p-4 rounded-full align-middle justify-center h-[60px] w-[60px]">
+                    <i class="fas fa-image fa-lg"></i>
+                </button>
+                <button id="capture-photo-button" class="bg-blue-500 text-white font-bold p-4 rounded-full align-middle justify-center h-[60px] w-[60px]">
+                    <i class="fas fa-camera fa-lg"></i>
+                </button>
+                <button id="record-video-button" class="bg-blue-500 text-white font-bold p-4 rounded-full align-middle justify-center h-[60px] w-[60px]">
+                    <i class="fas fa-video fa-lg"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-1 left-1/2 transform -translate-x-1/2">
+        <button id="logout-button" class="bg-white text-blue-500 border border-blue-500 rounded-full px-4 py-2 font-semibold hover:bg-blue-100">Log Out</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
